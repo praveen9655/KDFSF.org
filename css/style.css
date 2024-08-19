@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF3E41;
+    --primary: #0e2746;
     --secondary: #51CFED;
     --light: #F8F2F0;
     --dark: #060315;
@@ -94,8 +94,14 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: var(--primary);
 }
+.navbar .navbar-brand img {
+    width: 300px;
+}
 
 @media (max-width: 991.98px) {
+    .navbar .navbar-brand img {
+        width: 250px;
+    }
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
@@ -104,6 +110,7 @@
     .navbar-light .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
+    
 }
 
 .navbar-light .navbar-brand,
