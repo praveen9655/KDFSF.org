@@ -1,7 +1,7 @@
 /********** Template CSS **********/
 :root {
     --primary: #0e2746;
-    --secondary: #51CFED;
+    --secondary: #3e6ea9;
     --light: #F8F2F0;
     --dark: #060315;
 }
@@ -69,7 +69,62 @@
     justify-content: center;
     font-weight: normal;
 }
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    background: #fff;
+    height: 40px;
+    font-size: 14px;
+    transition: all 0.5s;
+    z-index: 996;
+  }
+  
+  #topbar.topbar-scrolled {
+    top: -40px;
+  }
+  
+  #topbar .contact-info a {
+    line-height: 1;
+    color: #03121c;
+    transition: 0.3s;
+    padding-right: 8px;
+  }
+  
+  #topbar .contact-info a:hover {
+    opacity: 0.7;
+  }
+  
+  #topbar .contact-info i {
+      color: #03121c;
+      padding-right: 7px;
+      margin-left: 15px;
+      line-height: 0;
+  }
+  
+  #topbar .contact-info i:first-child {
+    margin-left: 0;
+  }
+  
+  #topbar .social-links a {
+    color: #03121c;
+    padding-left: 15px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+  }
+  
+  #topbar .social-links a:hover {
+    opacity: 0.7;
+  }
+  
+  #topbar .social-links a:first-child {
+    border-left: 0;
+  }
 
+#header.header-scrolled {
+    top: 0;
+  }
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
     border: none;
@@ -92,7 +147,7 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #FFFFFF;
 }
 .navbar .navbar-brand img {
     width: 300px;
@@ -100,7 +155,7 @@
 
 @media (max-width: 991.98px) {
     .navbar .navbar-brand img {
-        width: 250px;
+        width: 240px;
     }
     .navbar-light .navbar-nav .nav-link  {
         margin-right: 0;
@@ -119,12 +174,13 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--dark);
-    font-weight: 500;
+    color: #FFFFFF;
+
+    font-weight: bold;
 }
 
 .navbar-light.sticky-top {
-    top: -100px;
+    top: 40px;
     transition: .5s;
 }
 
@@ -197,7 +253,7 @@
 
 .header-carousel .owl-nav {
     position: absolute;
-    top: 50%;
+    top: 80%;
     right: 8%;
     transform: translateY(-50%);
     display: flex;

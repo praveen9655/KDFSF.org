@@ -10,21 +10,41 @@
         }, 1);
     };
     spinner();
+
+    //Topbar
+    // let selectHeader = select('#header')
+    // let selectTopbar = select('#topbar')
+    // if (selectHeader) {
+    //   const headerScrolled = () => {
+    //     if (window.scrollY > 100) {
+    //       selectHeader.classList.add('header-scrolled')
+    //       if (selectTopbar) {
+    //         selectTopbar.classList.add('topbar-scrolled')
+    //       }
+    //     } else {
+    //       selectHeader.classList.remove('header-scrolled')
+    //       if (selectTopbar) {
+    //         selectTopbar.classList.remove('topbar-scrolled')
+    //       }
+    //     }
+    //   }
+    //   window.addEventListener('load', headerScrolled)
+    //   onscroll(document, headerScrolled)
+    // }
     
     
-    // Initiate the wowjs
-    new WOW().init();
-
-
+    
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').css('top', '0px');
         } else {
-            $('.sticky-top').css('top', '-100px');
+            $('.sticky-top').css('top', '40px');
         }
     });
     
+    // Initiate the wowjs
+    new WOW().init();
     
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
