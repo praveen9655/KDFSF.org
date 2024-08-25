@@ -11,27 +11,7 @@
     };
     spinner();
 
-    //Topbar
-    // let selectHeader = select('#header')
-    // let selectTopbar = select('#topbar')
-    // if (selectHeader) {
-    //   const headerScrolled = () => {
-    //     if (window.scrollY > 100) {
-    //       selectHeader.classList.add('header-scrolled')
-    //       if (selectTopbar) {
-    //         selectTopbar.classList.add('topbar-scrolled')
-    //       }
-    //     } else {
-    //       selectHeader.classList.remove('header-scrolled')
-    //       if (selectTopbar) {
-    //         selectTopbar.classList.remove('topbar-scrolled')
-    //       }
-    //     }
-    //   }
-    //   window.addEventListener('load', headerScrolled)
-    //   onscroll(document, headerScrolled)
-    // }
-    
+
     
     
     // Sticky Navbar
@@ -83,7 +63,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({scrollTop: 0}, 500, 'easeInOutExpo');
         return false;
     });
 
@@ -127,8 +107,20 @@
             992:{
                 items:3
             }
+            
         }
+        
+        
     });
+    // Custom navigation
+    $('.owl-next').click(function() {
+        $('.testimonial-carousel').trigger('next.owl.carousel');
+    });
+
+    $('.owl-prev').click(function() {
+        $('.testimonial-carousel').trigger('prev.owl.carousel');
+    });
+
     
 })(jQuery);
 
