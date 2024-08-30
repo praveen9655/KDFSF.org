@@ -261,9 +261,10 @@
     flex-direction: column;
 }
 .header-carousel .carinner{
-    background-color: #0e2746de;
+    background: linear-gradient(72deg, rgba(15, 40, 71, 0.808) 50%, rgba(18, 49, 87, 0.637) 50%);
     border-radius: 20px;
     margin-bottom: 10px;
+
 }
 .header-carousel .owl-nav .owl-prev,
 .header-carousel .owl-nav .owl-next {
@@ -436,7 +437,7 @@ background: linear-gradient(72deg, rgba(15,40,71,1) 50%, rgba(18,49,87,1) 50%);
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    /* box-shadow: 0 0 45px rgba(0, 0, 0, .08); */
     animation: pulse 1s ease-out .5s;
 }
 
