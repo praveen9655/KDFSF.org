@@ -429,7 +429,11 @@ background: linear-gradient(72deg, rgba(15,40,71,1) 50%, rgba(18,49,87,1) 50%);
     background: var(--secondary);
 }
 
-
+.actimg {
+    box-shadow: 0.5rem 0.5rem #0097d24a, -0.5rem -0.5rem #cccccc82;
+    width: 90%;
+    margin: 10px;
+  }
 /*** Testimonial ***/
 .testimonial-carousel .owl-item .testimonial-item {
     position: relative;
